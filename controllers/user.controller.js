@@ -24,7 +24,7 @@ module.exports.getCreate = function(req, res){
 
 module.exports.view = function(req, res){
 	var id = req.params.id;
-	var user = db.get('users').find({ id: id}).value();
+	var user = db.get('users').find({id: id}).value();
 	res.render('hello/view', {
 		user: user
 	});
@@ -32,20 +32,7 @@ module.exports.view = function(req, res){
 
 module.exports.postCreate = function(req, res){
 	req.body.id = shortid.generate();
-	var errors = [];
-	if (!req.body.name){
-		errors.push('Name is required');
-	}
-	if (!req.body.phone){
-		errors.push('Phone is required');
-	}
-	if(errors.length){ 
-		res.render('hello/create', {
-			errors: errors,
-			values: req.body
-		});
-		return;
-	}
+	console.log(res.locals);
 	db.get('users').push(req.body).write();
 	res.redirect('/users');
 };
