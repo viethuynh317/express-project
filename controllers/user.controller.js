@@ -19,6 +19,7 @@ module.exports.search = function(req, res){
 };
 
 module.exports.getCreate = function(req, res){
+	console.log(req.cookies);
 	res.render('hello/create');
 };
 
