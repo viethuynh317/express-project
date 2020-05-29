@@ -15,47 +15,9 @@
     {
       "name": "viet",
       "phone": "1123456",
+      "email": "huynhvanviet317@gmail.com",
+      "password": "123456",
       "id": "eBGoEWfVi"
-    },
-    {
-      "name": "Ronaldo",
-      "phone": "0123456",
-      "id": "6qO6Zd_RT"
-    },
-    {
-      "name": "Messi",
-      "phone": "0123156",
-      "id": "14TfEcNlE"
-    },
-    {
-      "name": "Messi1",
-      "phone": "12332321",
-      "id": "rsiBvaLq_"
-    },
-    {
-      "name": "Viet",
-      "phone": "321321321321",
-      "id": "qeykhCSRZ"
-    },
-    {
-      "name": "Messi",
-      "phone": "4444411111",
-      "id": "5F7o2l8Ef"
-    },
-    {
-      "name": "Hello Son",
-      "phone": "0123456",
-      "id": "ixpSLX0od"
-    },
-    {
-      "name": "Hello Son",
-      "phone": "1234343242",
-      "id": "f1cwHf8AK"
-    },
-    {
-      "name": "viet",
-      "phone": "1234343242",
-      "id": "-nPH_182n"
     }
   ]
 }
