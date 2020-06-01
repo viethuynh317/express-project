@@ -1,0 +1,22 @@
+extends ../layouts/common
+block content
+	h1 
+		span Products
+	div.container.d-flex
+		form.ml-auto.d-flex
+			input(type="text")
+			button.btn.btn-primary Search
+	div.container
+		div.row
+			each product in products
+				div.col-md-3
+					div.card
+						img(src=product.image).card-img-top
+						div.card-body
+							h4.card-title=product.name
+							div.card-text=product.description
+							button.btn.btn-outline-primary.mt-3 Add to cart
+		.pt-5
+
+							
+	
