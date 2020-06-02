@@ -16,7 +16,7 @@ app.use(cookieParser(process.env.SESSION_SECRET));
 app.use(express.static('public'));		
 app.use('/users', authMiddleware.auth, userRoute);
 app.use('/auth', authRoute);
-app.use('/products', productRoute);
+app.use('/products', authMiddleware.auth, productRoute);
 app.listen(port, function(){
 	console.log('Server listening on port ' + port);
 });
