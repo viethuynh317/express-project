@@ -2,7 +2,9 @@ var shortid = require('shortid');
 var db = require('../db');
 var router = require('../routes/user.route');
 module.exports.index = function(req, res){
+	var sessionId = req.signedCookies.sessionId;
 	res.render('hello/index',{
+		total: db.get('sessions').find({sessionId:sessionId}).get('total').value(),
 		users: db.get('users').value()
 	});
 };
@@ -24,10 +26,12 @@ module.exports.getCreate = function(req, res){
 };
 
 module.exports.view = function(req, res){
+	
 	var id = req.params.id;
 	var user = db.get('users').find({id: id}).value();
 	res.render('hello/view', {
-		user: user
+		
+		user: user	
 	});
 }; 
 
