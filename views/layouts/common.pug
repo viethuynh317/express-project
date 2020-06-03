@@ -17,7 +17,17 @@ html
 					li.nav-item
 						a.nav-link(href='/users/create') Users
 					li.nav-item
-						a.nav-link(href='/products') Products
+						a.nav-link(href='/products') 
+							span Products
+					li.nav-item
+						a.nav-link(href='/products') 
+							span Carts
+							span &nbsp
+							span (Total: &nbsp
+								span= total
+								span )
+
+							
 			if(user)			
 				p= user.name
 		.container.pt-5

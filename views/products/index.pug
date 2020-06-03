@@ -15,7 +15,7 @@ block content
 						div.card-body
 							h4.card-title=product.name
 							div.card-text=product.description
-							button.btn.btn-outline-primary.mt-3 Add to cart
+							a.btn.btn-outline-primary.mt-3(href="/cart/add/" + product.id) Add to cart
 		.pt-5
 
 							
