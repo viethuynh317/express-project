@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 
 mongoose.connect(process.env.MONGO_URL);
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 
